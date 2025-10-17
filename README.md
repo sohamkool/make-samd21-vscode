@@ -1,12 +1,12 @@
-# Portable Embedded Build System for Seeed XIAO M0 (SAMD21)
+# Portable Embedded Build System for Seeed XIAO M0+ (SAMD21)
 
 ## Project Goal
 
-This repository provides a highly customized and **IDE-agnostic build system** using a **GNU Makefile** to compile C/C++ projects for the **Seeed XIAO M0** (Microchip SAMD21) microcontroller.
+This repository provides a prototype of a customized and **build system** using a **GNU Makefile** to compile C/C++ projects for the **Seeed XIAO** (Microchip SAMD21) mcu hardware.
 
-This approach bypasses the Arduino IDE to achieve complete control over the toolchain, essential for **Real-Time Operating System (RTOS)** integration, advanced debugging, and establishing a professional, repeatable application build process.
+This approach bypasses the Arduino IDE to achieve complete control over the toolchain, essential for **rtw** integration, advanced port monitoring, and establishing a professional, repeatable application build process. This makefile sets the template to integrate tools for code generation software.
 
-## Key Technical Details and Sources
+## Few Technical Details of Intended Platform
 
 | Component | Specification/Source | Notes |
 | :--- | :--- | :--- |
@@ -20,7 +20,7 @@ This approach bypasses the Arduino IDE to achieve complete control over the tool
 ## Prerequisites
 
 1.  **Arm GNU Toolchain:** The specific version (7-2017q4 or compatible) must be installed.
-2.  **Arduino Core Files:** A local, extracted copy of the `ArduinoCore-samd-master` repository is required to resolve all include paths (must be referenced by the `CORE_PATH` variable).
+2.  **Arduino Core Files:** A local, cloned copy of the [ArduinoCore-samd-master](https://github.com/arduino/ArduinoCore-samd) repository is required to resolve all include paths (must be referenced by the `CORE_PATH` variable).
 3.  **GNU Make:** Version 4.0+ is recommended.
 
 ## Usage
